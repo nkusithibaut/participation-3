@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http//www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"></head>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #515657bf;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #55525257;
+  color: white;
+}
+</style>
+<body>
+<div class="topnav">
+    <a th:href="@{/index}">Home</a>
+    <a th:href="@{/news}">News</a>
+    <a class="active" th:href="@{/contact}">Contact</a>
+    <a th:href="@{/about}">About</a>
+</div>
+
+<div style="padding-left:16px">
+    <h3>This is <b>Contact page</b></h3>
+    <p>Some content.....</p>
+    <p>test coding interfaces</p>
+</div>
+
+</body>
+</html>
